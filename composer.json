@@ -10,7 +10,8 @@
         }
     ],
     "require": {
-		"php":	">=7.0.0"
+        "php":  ">=7.0.0",
+        "slaxweb/exception": "0.1.*@dev"
     },
     "require-dev": {
         "codeception/codeception": "dev-master",
@@ -19,11 +20,11 @@
     "suggest": {
         "pimple/pimple": "Make use of available providers for Pimple version 3.0.x"
     },
-	"autoload":	{
-		"psr-4": {
-			"SlaxWeb\\GetSet\\": "src/"
-		}
-	},
+    "autoload": {
+        "psr-4": {
+            "SlaxWeb\\GetSet\\": "src/"
+        }
+    },
     "extra": {
         "branch-alias": {
             "dev-develop": "0.1.x-dev"
