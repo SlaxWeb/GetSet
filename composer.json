@@ -1,0 +1,32 @@
+{
+    "name": "slaxweb/config",
+    "description": "Config component for the SlaxWeb Framework",
+    "license": "MIT",
+    "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Tomaz Lovrec",
+            "email": "tomaz.lovrec@gmail.com"
+        }
+    ],
+    "require": {
+		"php":	">=7.0.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "dev-master",
+        "behat/gherkin": "~4.4"
+    },
+    "suggest": {
+        "pimple/pimple": "Make use of available providers for Pimple version 3.0.x"
+    },
+	"autoload":	{
+		"psr-4": {
+			"SlaxWeb\\GetSet\\": "src/"
+		}
+	},
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}
