@@ -1,6 +1,6 @@
 {
-    "name": "slaxweb/config",
-    "description": "Config component for the SlaxWeb Framework",
+    "name": "slaxweb/getset",
+    "description": "Getter and Setter traits for SlaxWeb Framework",
     "license": "MIT",
     "version": "0.1.0",
     "authors": [
