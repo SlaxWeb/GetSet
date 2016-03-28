@@ -13,9 +13,6 @@
         "php":  ">=7.0.0",
         "slaxweb/exception": "0.1.*@dev"
     },
-    "suggest": {
-        "pimple/pimple": "Make use of available providers for Pimple version 3.0.x"
-    },
     "autoload": {
         "psr-4": {
             "SlaxWeb\\GetSet\\": "src/"
