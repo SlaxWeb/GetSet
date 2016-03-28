@@ -19,8 +19,7 @@ trait MagicSet
     /**
      * Set magic method
      *
-     * Used to set protected class properties, and ensures that 'name' and
-     * 'definition' properties can not be overwritten.
+     * Used to set protected class properties.
      *
      * @param string $param Name of the protected parameter, without the
      *                      underscore.
