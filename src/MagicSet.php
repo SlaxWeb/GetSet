@@ -31,7 +31,7 @@ trait MagicSet
      */
     public function __set(string $param, $value)
     {
-        $prepend = $this->_getSetPrepend ?? "_";
+        $prepend = isset($this->_getSetPrepend) ? $this->_getSetPrepend : "_";
         $property = "{$prepend}{$param}";
         if (isset($this->{$property}) === false) {
             throw new \SlaxWeb\Exception\UnknownPropertyException(
