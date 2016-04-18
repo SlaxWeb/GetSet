@@ -24,10 +24,8 @@ trait MagicSet
      * @param string $param Name of the protected parameter, without the
      *                      underscore.
      * @param mixed $value Value of the property
-     * @exception \SlaxWeb\Exception\UnknownPropertyException Thrown if access
-     *                                                        to unknown
-     *                                                        property is made.
-     * @return void
+     * @exception \SlaxWeb\Exception\UnknownPropertyException Thrown if access to unknown property is made
+     * @return self
      */
     public function __set(string $param, $value): self
     {
