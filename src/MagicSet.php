@@ -29,7 +29,7 @@ trait MagicSet
      *                                                        property is made.
      * @return void
      */
-    public function __set(string $param, $value)
+    public function __set(string $param, $value): self
     {
         $prepend = isset($this->_getSetPrepend) ? $this->_getSetPrepend : "_";
         $property = "{$prepend}{$param}";
@@ -39,5 +39,9 @@ trait MagicSet
                 . "unable to get value."
             );
         }
+
+        $this->{$property} = $value;
+
+        return $this;
     }
 }
