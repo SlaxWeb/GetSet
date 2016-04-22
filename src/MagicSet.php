@@ -25,9 +25,9 @@ trait MagicSet
      *                      underscore.
      * @param mixed $value Value of the property
      * @exception \SlaxWeb\Exception\UnknownPropertyException Thrown if access to unknown property is made
-     * @return self
+     * @return void
      */
-    public function __set(string $param, $value): self
+    public function __set(string $param, $value)
     {
         $prepend = isset($this->_getSetPrepend) ? $this->_getSetPrepend : "_";
         $property = "{$prepend}{$param}";
@@ -39,7 +39,5 @@ trait MagicSet
         }
 
         $this->{$property} = $value;
-
-        return $this;
     }
 }
