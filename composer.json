@@ -2,7 +2,6 @@
     "name": "slaxweb/getset",
     "description": "Getter and Setter traits for SlaxWeb Framework",
     "license": "MIT",
-    "version": "0.1.0",
     "authors": [
         {
             "name": "Tomaz Lovrec",
@@ -11,7 +10,7 @@
     ],
     "require": {
         "php":  ">=7.0.0",
-        "slaxweb/exception": "0.1.*@dev"
+        "slaxweb/exception": "~0.1"
     },
     "autoload": {
         "psr-4": {
@@ -20,7 +19,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "0.1.x-dev"
+            "dev-master": "0.2.x-dev"
         }
     }
 }
